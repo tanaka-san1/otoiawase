@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>規約に同意</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .terms-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            max-height: 300px;
+            overflow-y: scroll;
+            background-color: #f9f9f9;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function redirectToAgreement() {
+            // 転送先URLを指定してください
+            const targetURL = "https://example.com";
+            window.location.href = targetURL;
+        }
+    </script>
+</head>
+<body>
+    <h1>利用規約</h1>
+    <p>以下の利用規約をお読みいただき、同意する場合は「同意する」ボタンを押してください。</p>
+
+    <!-- 利用規約の内容を表示するセクション -->
+    <section class="terms-container">
+        <h2>利用規約</h2>
+        <p>
+            本サービスをご利用いただく前に、以下の利用規約をよくお読みください。本規約に同意いただいた場合のみ、本サービスをご利用いただけます。
+        </p>
+        <p>
+            1.　問い合わせ専用メールアドレスを不正に利用した活動を禁じる。<br>
+            2.　お問い合わせを使用して誹謗中傷行為を行うことを禁じる。<br>
+            3.　規約は予告なく変更される場合がある。変更されても一度同意したら継続的に同意される。<br>
+        </p>
+        <p>これらの規約に同意する場合、「規約に同意する」ボタンを押してください。</p>
+    </section>
+
+    <!-- ボタンセクション -->
+    <div class="button-container">
+        <button onclick="redirectToAgreement()">同意する</button>
+    </div>
+</body>
+</html>
